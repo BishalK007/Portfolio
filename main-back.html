@@ -1,0 +1,82 @@
+<div class="flex flex-col md:flex-row">
+    <section id="navigator " class="">
+        <!-- Mobile Navbar -->
+        <nav class=" md:hidden bg-red-600">
+            <div class="w-screen bg-red-600">
+                <div class="flex flex-row justify-between items-center bg-black py-2">
+                    <!-- Developer Text -->
+                    <div class="flex flex-row text-white px-8 ">
+                        <p class="font-bold ">Developer</p>
+                    </div>
+                    <!-- Hamburger Button -->
+                    
+                    <div class="px-8 ">
+                        <div class="hamburger-menu ">
+                            <div class="ham-bar bar-top "></div>
+                            <div class="ham-bar bar-mid"></div>
+                            <div class="ham-bar bar-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dummy Expansion -->
+                <div class="dummy_expansion  bg-black" id="Dummy_Dropdown"> 
+                <!-- Open Hamburger Menu -->
+                    <div class="   h-screen " id="Hamburger_Menu">
+                        <!-- Hamburger Menu Items -->
+                        <div class="flex flex-col h-fit   text-white bg-black">
+                            <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
+                                <i class="material-icons justify-center ">home</i>
+                                <p class="font-bold px-9" > HOME</p>
+                            </div>
+                            <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                                <i class="material-icons">account_circle</i>
+                                <p class="font-bold px-9" > ABOUT</p>
+                            </div>
+                            <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                                <i class="material-icons">work</i>
+                                <p class="font-bold px-9" > PROJECTS</p>
+                            </div>
+                        </div>
+                        <!--Free Space Under Hamburger Menu  -->
+                        <div class="h-2/3 bg-red-600 opacity-0" id="free_space_bottom">
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </nav>
+        <!--Desktop Navbar  -->
+        <nav class=" md:w-screen invisible md:visible bg-red-600" id="Desktop_Navbar">
+            <div class="w-16 bg-black transition-multiple duration-200  hover:w-44 group">
+                <div class="  h-screen  ">
+                    <div class="py-20">    
+                        <div class="flex flex-col   text-white ">
+                            <div class="flex flex-row hover:text-yellow-300 px-5 py-5 hover:scale-x-110 hover:scale-y-125 transition ease-in-out delay-50">
+                                <i class="material-icons justify-center ">home</i>
+                                <p class="font-bold px-9  opacity-0 group-hover:opacity-100 group-hover:delay-200 " id="home" > HOME</p>
+                            </div>
+                            <div class="flex flex-row hover:text-yellow-300 px-5 py-5 hover:scale-x-110 hover:scale-y-125  transition ease-in-out delay-50">
+                                <i class="material-icons">account_circle</i>
+                                <p class="font-bold px-9  opacity-0 group-hover:opacity-100 group-hover:delay-200 " > ABOUT</p>
+                            </div>
+                            <div class="flex flex-row hover:text-yellow-300 px-5 py-5 hover:scale-x-110 hover:scale-y-125  transition ease-in-out delay-50">
+                                <i class="material-icons">work</i>
+                                <p class="font-bold px-9  opacity-0 group-hover:opacity-100 group-hover:delay-200  " > PROJECTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="main">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>01</div>
+            <div>01</div>
+            <div>01</div>
+            <div>01</div>
+            <div>01</div>
+            <div>01</div>
+            <div>01</div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./output.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet"> 
+    <!-- END FONTS -->
+    <title>Bishal</title>
+</head>
+<body class="">
+    <!-- Mobile Nav -->
+    
+    <nav class=" md:hidden absolute bg-black w-screen  text-white" id="Mobile_Navbar">
+        <div class="flex flex-row my-5 mx-5 items-center justify-between">
+            <p class="font-bold">Developer</p>
+            <!-- Hamburger Button Below As Absolute Positioning-->                 
+            
+        </div>
+        <div class="dummy_expansion" id="Dummy_Dropdown">
+            <!-- Hamburger Menu Items -->
+            <div class=" flex-col h-fit   text-white bg-black" id="Hamburger_Menu">
+                <a href="#home">
+                    <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
+                        <i class="material-icons justify-center ">home</i>
+                        <p class="font-bold px-9" > HOME</p>
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                        <i class="material-icons">account_circle</i>
+                        <p class="font-bold px-9" > ABOUT</p>
+                    </div>
+                </a>
+                <a href="#projects">
+                    <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                        <i class="material-icons">work</i>
+                        <p class="font-bold px-9" > PROJECTS</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hamburger Button --> 
+    <div class="md:hidden ham absolute text-white md:text-black  left-3/4" id="ham">
+        <div class="hamburger-menu" >
+            <div class="ham-bar bar-top "></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+        </div>
+    </div>
+    <!-- Desktop Nav -->
+    <nav class="nav absolute  bg-black h-screen w-16 hover:w-52 transition-multiple text-white" id="Desktop_Navbar">
+        <div class="flex flex-col my-20 ">
+            <a href="#home">
+                <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                    <i class="material-icons justify-center ">home</i>
+                    <p class="font-bold Navtext_Desktop mx-7">HOME</p>
+                </div>
+            </a>
+            <a href="#about">
+                <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                    <i class="material-icons">account_circle</i>
+                    <p class="font-bold Navtext_Desktop mx-7">ABOUT</p>
+                </div>
+            </a>
+            <a href="#projects">
+                <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                    <i class="material-icons">work</i>
+                    <p class="font-bold Navtext_Desktop mx-7">WORK</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Division -->
+    <div class="pt-16 px-0 md:pl-16 md:py-0" >
+        <div class="overflow-auto" id="Scroll_Box">
+            <div class="R h-fill  flex flex-col space-y-3 w-full">
+                <!-- Home Division -->
+                <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="home">
+                    <!-- My Image -->
+                    <div class="S  w-full h-96  md:h-screen md:w-1/2 flex flex-row justify-center" >                                            
+                        <img class=" object-scale-down   p-3 " src="./imgs/me.png" alt="Bishal" >
+                    </div>
+                    <!-- Quotation -->
+                    <div class="S h-fill w-screen   flex flex-col justify-center md:h-screen md:w-1/2 text-center p-10" >
+                            <p class="font-myfont text-2xl md:text-3xl lg:text-4xl lineUp">“<br>Currently in 2nd Year, <br> a CS student passionate about Tech and <br> interested in Open Source.<br><br>”</p>
+                    </div>
+                </div>
+                <!-- About Division -->
+                <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="about">
+                    <div class="S  w-full h-96 align-middle md:h-screen md:w-1/2" >
+                    
+                    </div>
+                    <div class="S h-96 w-screen  flex flex-col justify-center md:h-screen md:w-1/2">
+    
+                    </div>
+                </div>
+                <!-- Projects Division -->
+                <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="projects">
+                    <div class="S  w-full h-96 align-middle md:h-screen md:w-1/2" >
+
+                    </div>
+                    <div class="S h-96 w-screen  flex flex-col justify-center md:h-screen md:w-1/2">
+    
+                    </div>
+                </div>
+
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="./js.js"></script>
+</body>
+</html>
