@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 /* DUMMY COLOURS  */
-
+/*
 body{
     background-color: yellow;
 }
@@ -16,7 +16,7 @@ body{
 .S{
     background-color: darkgrey;
 }
-
+*/
 .lineUp {
     animation: 2s anim-lineUp ease-out ;
   }
