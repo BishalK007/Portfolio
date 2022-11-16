@@ -16,104 +16,100 @@
 </head>
 <body class="">
 
-
-
-    <!-- Mobile Nav -->
-    
-    <nav class=" md:hidden absolute bg-black w-screen  text-white" id="Mobile_Navbar">
-        <div class="flex flex-row my-5 mx-5 items-center justify-between">
-            <p class="font-bold">Developer</p>
-            <!-- Hamburger Button Below As Absolute Positioning-->                 
-            
-        </div>
-        <div class="dummy_expansion" id="Dummy_Dropdown">
-            <!-- Hamburger Menu Items -->
-            <div class=" flex-col h-fit   text-white bg-black" id="Hamburger_Menu">
-                <a href="#home">
-                    <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
-                        <i class="material-icons justify-center ">home</i>
-                        <p class="font-bold px-9" > HOME</p>
-                    </div>
-                </a>
-                <a href="#about">
-                    <div class=" ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
-                        <i class="material-icons">account_circle</i>
-                        <p class="font-bold px-9" > ABOUT</p>
-                    </div>
-                </a>
-                <a href="#projects">
-                    <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
-                        <i class="material-icons">work</i>
-                        <p class="font-bold px-9" > PROJECTS</p>
-                    </div>
-                </a>
-                <!-- Contact Me -->
-                <!-- <a href="#contact"> -->
-                    <div class="ham_field text-white contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:translate-x-9  transition align-center ease-in-out">
-                        <i class="material-icons">comment</i>
-                        <p class="font-bold px-9" > CONTACT ME</p>
-                    </div>
-                <!-- </a> -->
+    <!-- Navigator -->
+    <div class="absolute z-10">
+        <!-- Mobile Nav -->    
+        <nav class=" md:hidden absolute z-20 bg-black w-screen  text-white" id="Mobile_Navbar">
+            <div class="flex flex-row my-5 mx-5 items-center justify-between">
+                <p class="font-bold">Developer</p>
+                <!-- Hamburger Button Below As Absolute Positioning-->                 
+                
             </div>
-        </div>
-    </nav>
+            <div class="dummy_expansion" id="Dummy_Dropdown">
+                <!-- Hamburger Menu Items -->
+                <div class=" flex-col h-fit   text-white bg-black" id="Hamburger_Menu">
+                    <a href="#home">
+                        <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
+                            <i class="material-icons justify-center ">home</i>
+                            <p class="font-bold px-9" > HOME</p>
+                        </div>
+                    </a>
+                    <a href="#about">
+                        <div class=" ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                            <i class="material-icons">account_circle</i>
+                            <p class="font-bold px-9" > ABOUT</p>
+                        </div>
+                    </a>
+                    <a href="#projects">
+                        <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                            <i class="material-icons">work</i>
+                            <p class="font-bold px-9" > PROJECTS</p>
+                        </div>
+                    </a>
+                    <!-- Contact Me -->
+                    <!-- <a href="#contact"> -->
+                        <div class="ham_field text-white contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:translate-x-9  transition align-center ease-in-out">
+                            <i class="material-icons">comment</i>
+                            <p class="font-bold px-9" > CONTACT ME</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Desktop Nav -->
+        <nav class=" nav absolute z-20 bg-black h-screen w-16 hover:w-52 transition-multiple text-white" id="Desktop_Navbar">
+            <div class="flex flex-col h-screen justify-between">
+                <!-- Middle Buttons -->
+                <div class="flex flex-col justify-center h-full">
+                        <a href="#home">
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                                <i class="material-icons  pt1">home</i>
+                                <p class="font-bold Navtext_Desktop mx-7">HOME</p>
+                            </div>
+                        </a>
+                        <a href="#about">
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                                <i class="material-icons pt2">account_circle</i>
+                                <p class="font-bold Navtext_Desktop mx-7">ABOUT</p>
+                            </div>
+                        </a>
+                        <a href="#projects">
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                                <i class="material-icons pt1">work</i>
+                                <p class="font-bold Navtext_Desktop mx-7">WORK</p>
+                            </div>
+                        </a>
+                    
+                </div>
+                <!-- Contact Me -->
+                    <!-- <a href="#contact"> -->
+                        <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:scale-105  transition align-center ease-in-out">
+                            <i class="material-icons pt2">comment</i>
+                            <div class="flex flex-row">
+                                <p class="font-bold Navtext_Desktop ml-7 ">CONTACT </p>
+                                <p class="font-bold Navtext_Desktop mx-2">ME </p>
+                            </div>
+                        </div>
+                    <!-- </a> -->
+            </div>
+        </nav>
+    </div>
     <!-- Hamburger Button --> 
-    <div class="md:hidden ham absolute text-white md:text-black  left-3/4" id="ham">
+    <div class=" md:hidden ham absolute z-30 text-white md:text-black  left-3/4" id="ham">
         <div class="hamburger-menu" >
             <div class="ham-bar bar-top "></div>
             <div class="ham-bar bar-mid"></div>
             <div class="ham-bar bar-bottom"></div>
         </div>
     </div>
-    <!-- Desktop Nav -->
-    <nav class=" nav absolute  bg-black h-screen w-16 hover:w-52 transition-multiple text-white" id="Desktop_Navbar">
-        <div class="flex flex-col h-screen justify-between">
-            <!-- Middle Buttons -->
-            <div class="flex flex-col justify-center h-full">
-                    <a href="#home">
-                        <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
-                            <i class="material-icons  pt1">home</i>
-                            <p class="font-bold Navtext_Desktop mx-7">HOME</p>
-                        </div>
-                    </a>
-                    <a href="#about">
-                        <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
-                            <i class="material-icons pt2">account_circle</i>
-                            <p class="font-bold Navtext_Desktop mx-7">ABOUT</p>
-                        </div>
-                    </a>
-                    <a href="#projects">
-                        <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
-                            <i class="material-icons pt1">work</i>
-                            <p class="font-bold Navtext_Desktop mx-7">WORK</p>
-                        </div>
-                    </a>
-                
-            </div>
-            <!-- Contact Me -->
-                <!-- <a href="#contact"> -->
-                    <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:scale-105  transition align-center ease-in-out">
-                        <i class="material-icons pt2">comment</i>
-                        <div class="flex flex-row">
-                            <p class="font-bold Navtext_Desktop ml-7 ">CONTACT </p>
-                            <p class="font-bold Navtext_Desktop mx-2">ME </p>
-                        </div>
-                    </div>
-                <!-- </a> -->
-        </div>
-    </nav>
-
-
-    
-
-
 
     <!-- Main Division -->
-    <div class=" pt-16 px-0 md:pl-16 md:py-0" >
+    <div class="absolute z-0 top-16 md:top-0 md:left-16 " >
         <!-- Contact Me Page -->
-        <!-- <div class=" hidden  absolute h-full w-full " id="Contact_Page">
+        <div class=" hidden z-10 absolute h-full w-full left-16 top-16" id="Contact_Page">
             <div class="w-10 h-96 bg-red-500"></div>
-            <div class=" py-10 px-10 md:px-0">
+            <!-- <div class=" py-10 px-10 md:px-0">
                 <form class="form bg-white rounded-md w-full md:w-2/4">
                 <div class="pageTitle title">Sign Up </div>
                 <div class="secondaryTitle title">Please fill this form to sign up.</div>
@@ -124,10 +120,10 @@
                 <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
                 <button class="submit formEntry" onclick="thanks()">Submit</button>
                 </form>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
 
-        <div class=" overflow-auto" id="Scroll_Box">
+        <div class="absolute z-0 overflow-auto" id="Scroll_Box">
             <div class="R h-fill  flex flex-col space-y-3 w-full">
                 <!-- Home Division -->
                 <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="home">
