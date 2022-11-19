@@ -19,82 +19,62 @@
     <!-- Navigator -->
     <div class="absolute z-10">
         <!-- Mobile Nav -->    
-        <nav class=" md:hidden absolute z-20 bg-black w-screen  text-white" id="Mobile_Navbar">
-            <div class="flex flex-row my-5 mx-5 items-center justify-between">
-                <p class="font-bold">Developer</p>
-                <!-- Hamburger Button Below As Absolute Positioning-->                 
-                
-            </div>
-            <div class="dummy_expansion" id="Dummy_Dropdown">
-                <!-- Hamburger Menu Items -->
-                <div class=" flex-col h-fit   text-white bg-black" id="Hamburger_Menu">
-                    <a href="#home">
-                        <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
-                            <i class="material-icons justify-center ">home</i>
-                            <p class="font-bold px-9" > HOME</p>
-                        </div>
-                    </a>
-                    <a href="#about">
-                        <div class=" ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
-                            <i class="material-icons">account_circle</i>
-                            <p class="font-bold px-9" > ABOUT</p>
-                        </div>
-                    </a>
-                    <a href="#projects">
-                        <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
-                            <i class="material-icons">work</i>
-                            <p class="font-bold px-9" > PROJECTS</p>
-                        </div>
-                    </a>
-                    <!-- Contact Me -->
-                    <!-- <a href="#contact"> -->
-                        <div class="ham_field text-white contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:translate-x-9  transition align-center ease-in-out">
-                            <i class="material-icons">comment</i>
-                            <p class="font-bold px-9" > CONTACT ME</p>
-                        </div>
-                    <!-- </a> -->
-                </div>
-            </div>
-        </nav>
 
         <!-- Desktop Nav -->
-        <nav class=" nav absolute z-20 bg-black h-screen w-16 hover:w-52 transition-multiple text-white" id="Desktop_Navbar">
-            <div class="flex flex-col h-screen justify-between">
+
+        <nav class=" nav absolute z-20 bg-black h-screen   transition-multiple text-white" id="Desktop_Navbar">            
+            <div class="flex flex-col Navtext_Desktop h-screen justify-between">
                 <!-- Middle Buttons -->
-                <div class="flex flex-col justify-center h-full">
+                <div class="flex flex-col  justify-center h-full">
                         <a href="#home">
-                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
-                                <i class="material-icons  pt1">home</i>
-                                <p class="font-bold Navtext_Desktop mx-7">HOME</p>
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                <i class="material-icons  nav_icons pt-1">home</i>
+                                <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7" >HOME</p>
                             </div>
                         </a>
                         <a href="#about">
-                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
-                                <i class="material-icons pt2">account_circle</i>
-                                <p class="font-bold Navtext_Desktop mx-7">ABOUT</p>
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                <i class="material-icons  nav_icons pt-1">account_circle</i>
+                                <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7">ABOUT</p>
                             </div>
                         </a>
                         <a href="#projects">
-                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
-                                <i class="material-icons pt1">work</i>
-                                <p class="font-bold Navtext_Desktop mx-7">WORK</p>
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                <i class="material-icons  nav_icons pt-1">work</i>
+                                <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7">WORK</p>
                             </div>
                         </a>
                     
                 </div>
                 <!-- Contact Me -->
                     <!-- <a href="#contact"> -->
-                        <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:scale-105  transition align-center ease-in-out">
-                            <i class="material-icons pt2">comment</i>
+                        <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  items-center  transition ease-in-out">
+                            <i class="material-icons  pt-1">comment</i>
                             <div class="flex flex-row">
-                                <p class="font-bold Navtext_Desktop ml-7 ">CONTACT </p>
-                                <p class="font-bold Navtext_Desktop mx-2">ME </p>
+                                <p class="font-bold text-base md:text-xl lg:text-xl xl:text-2xl ml-7 ">CONTACT </p>
+                                <p class="font-bold text-base md:text-xl lg:text-xl xl:text-2xl mx-2">ME </p>
                             </div>
                         </div>
                     <!-- </a> -->
             </div>
         </nav>
-    </div>
+        <div class="absolute bg-white  z-20  border_desktop_nav_button_back"></div>
+        <div class="absolute bg-black h-4  w-4   z-50 border_desktop_nav_button_back_curve1"></div>
+        <div class="absolute bg-black h-4 w-4  z-50  border_desktop_nav_button_back_curve2"></div>
+            <!-- Circular Button -->
+            <div class=" desktop_nav_container absolute w-16  z-40  flex flex-col justify-center h-screen  " id="nav_button_desktop">
+                <div class="bg-black absolute scale-105 left-1 flex flex-row h-16 w-16 z-30 justify-center  items-center rounded-full desktop_nav_border">
+                    <div class="  ham   text-white md:text-black  " id="Desktop_ham">
+                        <div class="hamburger-menu" >
+                            <div class="ham-bar bar-top"></div>
+                            <div class="ham-bar bar-mid"></div>
+                            <div class="ham-bar bar-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
     <!-- Hamburger Button --> 
     <div class=" md:hidden ham absolute z-30 text-white md:text-black  left-3/4" id="ham">
         <div class="hamburger-menu" >

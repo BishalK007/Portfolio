@@ -17,6 +17,148 @@
     background-color: darkgrey;
 } */
 
+.desktop_nav_container {
+    visibility: hidden;
+    left: 1vw;
+    transition: left .5s ease-in ;
+}
+.desktop_nav_container.active {
+    visibility: hidden;
+    left: 90vw;
+    transition: left .5s ease-out;
+}
+
+#desktop_nav_icon_menu {
+    opacity: 100%;
+    transition: opacity .15s ease-in ;
+}
+#desktop_nav_icon_menu.active {
+    opacity: 0%;
+    transition: opacity .35s ease-out ;
+}
+#desktop_nav_icon_close {
+    opacity: 0%;
+    transition: opacity .15s ease-out ;
+}
+#desktop_nav_icon_close.active {
+    opacity: 100%;
+    transition: opacity .35s ease-in ;
+}
+#Desktop_Navbar{
+    visibility: hidden;
+}
+.nav_icons{
+    font-size: 1.9em !important;
+}
+.border_desktop_nav_button_back_curve2 , .border_desktop_nav_button_back_curve1, .border_desktop_nav_button_back {
+    visibility: hidden;
+} 
+@media (min-width: 768px) {
+    .border_desktop_nav_button_back_curve1{
+        opacity: 100%;
+        transition: opacity 0s ease-in .5s;
+        visibility: visible;
+        border-bottom-right-radius: 18px;
+        box-shadow: 10px 0 0 0  white;
+        left: calc(.8em );
+        top: calc(50vh - 3.05em  );
+    
+    }
+    .border_desktop_nav_button_back {
+        visibility: visible;
+        opacity: 100%;
+        transition: opacity 0s ease-in .5s;
+        height: calc(5rem + 10px);
+        width: calc(2.5rem + 5px);
+        scale: 105%;
+        left: 5px;
+        top: calc(50vh - 2.5rem - 4px);
+        border-bottom-left-radius:  5rem;
+        border-top-left-radius:  5rem;
+    }
+    .border_desktop_nav_button_back.active {
+        opacity: 0%;
+        transition: opacity 0s ease-in .5s;
+        visibility: hidden;
+        border-bottom-left-radius:  5rem;
+        border-top-left-radius:  5rem;
+    }
+    .border_desktop_nav_button_back_curve2{
+        opacity: 100%;
+        transition: opacity 0s ease-in .5s;
+        opacity: 100%;
+        visibility: visible;
+        border-top-right-radius: 18px;
+        box-shadow: 10px 0 0 0  white;
+        left: .8em;
+        top: calc(50vh + 2.2em);
+    }
+    .border_desktop_nav_button_back_curve2.active , .border_desktop_nav_button_back_curve1.active {
+        visibility: hidden;
+        opacity: 0%;
+        transition: opacity 0s ease-in .5s;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .nav_icons{
+        font-size:2.3em ;
+    }
+    
+    .desktop_nav_container {
+        visibility: visible;
+        left: .8rem;
+        transition: left .5s ease-in ;
+    }
+    .desktop_nav_container.active {
+        visibility: visible;
+        left: 90vw;
+        transition: left .5s ease-out;
+    }
+    #Desktop_Navbar{
+        visibility: visible;
+        width: 1.8rem;
+        transition: width .5s ease-in;
+    }
+    #Desktop_Navbar.active{
+        visibility: visible;
+        width: 30vw;
+        transition: width .5s ease-out;
+    }
+}
+.Navtext_Desktop {
+    opacity: 0%;
+    visibility: hidden;
+    transition: opacity .5s ease-in;
+}
+.Navtext_Desktop.active {
+    opacity: 100%;
+    visibility: visible;
+    transition: opacity .5s ease-in;
+}
+@media (min-width: 1024px) {
+    .nav_icons{
+        font-size:2.5em !important;
+    }
+    #Desktop_Navbar.active{
+        visibility: visible;
+        width: 25vw;
+        transition: width .5s ease-out;
+    }
+}
+@media (min-width: 1280px) {
+    .nav_icons{
+        font-size:2.8em !important;
+    }
+}
+@media (min-width: 1536px) {
+    .nav_icons{
+        font-size:3.2em !important;
+    }
+}
+
+
 .lineUp {
     animation: 2s anim-lineUp ease-out ;
   }
@@ -49,21 +191,7 @@
         scroll-behavior: smooth;
     }
 }
-.Navtext_Desktop {
-    visibility: hidden;
-}
-#Desktop_Navbar:hover .Navtext_Desktop{
-    visibility:visible ;
-}
-#Desktop_Navbar{
-    visibility: hidden;
-}
 
-@media (min-width: 768px) {
-    #Desktop_Navbar{
-        visibility: visible;
-    }
-}
 /* Hamburger Button Positioning  */
 .ham {
     scale: 1;
@@ -73,7 +201,7 @@
     /* transition: left .5s ease-out; */
 }
 .ham.active{
-    scale: 2.5;
+    scale: 1.5;
     left: calc(50% - 22px);
     top: calc(100% - 90px);
     transition: top .5s ease-out, left .5s ease-out, scale .5s ease-out,;
@@ -109,7 +237,7 @@
 .ham-bar {
     width: 70%;
     height: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     position: absolute;
     top: 50%;

@@ -1,46 +1,20 @@
-const hamMenu = document.querySelector('.hamburger-menu');
-const dummyDrop = document.querySelector("#Dummy_Dropdown");
-const hamPosition = document.getElementById("ham");
-function ham_menu_expand_contract () {
-    hamPosition.classList.toggle('active');
-    dummyDrop.classList.toggle('active');
-    hamMenu.classList.toggle('active');
-    var element = document.getElementById("Hamburger_Menu");
-    element.classList.toggle('active');
-}
-hamMenu.addEventListener('click', ham_menu_expand_contract);
+// For Desktop NavBar
+const navButtonDesktop = document.getElementById('nav_button_desktop');
+navButtonDesktop.addEventListener('click',() => {
+    navButtonDesktop.classList.toggle('active');
+    document.getElementById('Desktop_Navbar').classList.toggle('active');
+    document.querySelector('.ham').classList.toggle('active');
+    document.querySelector('.hamburger-menu').classList.toggle('active');
+    document.querySelector('.Navtext_Desktop').classList.toggle('active');
+    document.querySelector('.border_desktop_nav_button_back_curve1').classList.toggle('active');
+    document.querySelector('.border_desktop_nav_button_back_curve2').classList.toggle('active');
+    document.querySelectorAll('.border_desktop_nav_button_back').forEach(element => {
+        element.classList.toggle('active');
+    });
 
-function contactButtonPressed() {
-    const contactPage = document.getElementById("Contact_Page");
-    if(contactPage.classList.contains('hidden')){
-        contactPage.classList.remove('hidden');
-        contactPage.classList.toggle('active');
-    } else {
-        contactPage.classList.toggle('active');
-        contactPage.classList.add('hidden');
-    }
-}
-const contactButtons = document.querySelectorAll('.contact_button');
-contactButtons.forEach(button => {
-    button.addEventListener('click', contactButtonPressed);
-});
+    
 
-const hamFields = document.querySelectorAll('.ham_field');
 
-hamFields.forEach(field => {
-    field.addEventListener('click', ham_menu_expand_contract);
 })
-// const scrollBox = document.getElementById('Scroll_Box');
-// scrollBox.style.height = screen.height - document.getElementById('Desktop_Navbar').height - document.getElementById('Mobile_Navbar').height; 
-// scrollBox.style.width = screen.width - document.getElementById('Desktop_Navbar').width - document.getElementById('Mobile_Navbar').width; 
-// console.log(scrollBox.height);
 
-// const freeSpace = document.querySelector('#free_space_bottom');
-// freeSpace.addEventListener('click',() => {
-//     dummyDrop.classList.toggle('active');
-//     hamMenu.classList.toggle('active');
-//     var element = document.getElementById("Hamburger_Menu");
-//     element.classList.toggle('active');
-
-// });
 

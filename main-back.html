@@ -1,82 +1,169 @@
-<div class="flex flex-col md:flex-row">
-    <section id="navigator " class="">
-        <!-- Mobile Navbar -->
-        <nav class=" md:hidden bg-red-600">
-            <div class="w-screen bg-red-600">
-                <div class="flex flex-row justify-between items-center bg-black py-2">
-                    <!-- Developer Text -->
-                    <div class="flex flex-row text-white px-8 ">
-                        <p class="font-bold ">Developer</p>
-                    </div>
-                    <!-- Hamburger Button -->
+<!-- Portfolio  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./output.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet"> 
+    <!-- END FONTS -->
+    <title>Bishal</title>
+</head>
+<body class="">
+
+    <!-- Navigator -->
+    <div class="absolute z-10">
+        <!-- Mobile Nav -->    
+        <nav class=" md:hidden absolute z-20 bg-black w-screen  text-white" id="Mobile_Navbar">
+            <div class="flex flex-row my-5 mx-5 items-center justify-between">
+                <p class="font-bold">Developer</p>
+                <!-- Hamburger Button Below As Absolute Positioning-->                 
+                
+            </div>
+            <div class="dummy_expansion" id="Dummy_Dropdown">
+                <!-- Hamburger Menu Items -->
+                <div class=" flex-col h-fit   text-white bg-black" id="Hamburger_Menu">
+                    <a href="#home">
+                        <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
+                            <i class="material-icons justify-center ">home</i>
+                            <p class="font-bold px-9" > HOME</p>
+                        </div>
+                    </a>
+                    <a href="#about">
+                        <div class=" ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                            <i class="material-icons">account_circle</i>
+                            <p class="font-bold px-9" > ABOUT</p>
+                        </div>
+                    </a>
+                    <a href="#projects">
+                        <div class="ham_field flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
+                            <i class="material-icons">work</i>
+                            <p class="font-bold px-9" > PROJECTS</p>
+                        </div>
+                    </a>
+                    <!-- Contact Me -->
+                    <!-- <a href="#contact"> -->
+                        <div class="ham_field text-white contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:translate-x-9  transition align-center ease-in-out">
+                            <i class="material-icons">comment</i>
+                            <p class="font-bold px-9" > CONTACT ME</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Desktop Nav -->
+        <nav class=" nav absolute z-20 bg-black h-screen w-16 hover:w-52 transition-multiple text-white" id="Desktop_Navbar">
+            <div class="flex flex-col h-screen justify-between">
+                <!-- Middle Buttons -->
+                <div class="flex flex-col justify-center h-full">
+                        <a href="#home">
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                                <i class="material-icons  pt1">home</i>
+                                <p class="font-bold Navtext_Desktop mx-7">HOME</p>
+                            </div>
+                        </a>
+                        <a href="#about">
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                                <i class="material-icons pt2">account_circle</i>
+                                <p class="font-bold Navtext_Desktop mx-7">ABOUT</p>
+                            </div>
+                        </a>
+                        <a href="#projects">
+                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5 hover:translate-x-9 transition ease-in-out">
+                                <i class="material-icons pt1">work</i>
+                                <p class="font-bold Navtext_Desktop mx-7">WORK</p>
+                            </div>
+                        </a>
                     
-                    <div class="px-8 ">
-                        <div class="hamburger-menu ">
-                            <div class="ham-bar bar-top "></div>
-                            <div class="ham-bar bar-mid"></div>
-                            <div class="ham-bar bar-bottom"></div>
-                        </div>
-                    </div>
                 </div>
-                <!-- Dummy Expansion -->
-                <div class="dummy_expansion  bg-black" id="Dummy_Dropdown"> 
-                <!-- Open Hamburger Menu -->
-                    <div class="   h-screen " id="Hamburger_Menu">
-                        <!-- Hamburger Menu Items -->
-                        <div class="flex flex-col h-fit   text-white bg-black">
-                            <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9 transition ease-in-out delay-100">
-                                <i class="material-icons justify-center ">home</i>
-                                <p class="font-bold px-9" > HOME</p>
-                            </div>
-                            <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
-                                <i class="material-icons">account_circle</i>
-                                <p class="font-bold px-9" > ABOUT</p>
-                            </div>
-                            <div class="flex flex-row justify-start hover:text-yellow-300 px-5 py-5 hover:translate-x-9   transition ease-in-out delay-100">
-                                <i class="material-icons">work</i>
-                                <p class="font-bold px-9" > PROJECTS</p>
+                <!-- Contact Me -->
+                    <!-- <a href="#contact"> -->
+                        <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  hover:scale-105  transition align-center ease-in-out">
+                            <i class="material-icons pt2">comment</i>
+                            <div class="flex flex-row">
+                                <p class="font-bold Navtext_Desktop ml-7 ">CONTACT </p>
+                                <p class="font-bold Navtext_Desktop mx-2">ME </p>
                             </div>
                         </div>
-                        <!--Free Space Under Hamburger Menu  -->
-                        <div class="h-2/3 bg-red-600 opacity-0" id="free_space_bottom">
-                        </div>
-                    </div>               
-                </div>
+                    <!-- </a> -->
             </div>
         </nav>
-        <!--Desktop Navbar  -->
-        <nav class=" md:w-screen invisible md:visible bg-red-600" id="Desktop_Navbar">
-            <div class="w-16 bg-black transition-multiple duration-200  hover:w-44 group">
-                <div class="  h-screen  ">
-                    <div class="py-20">    
-                        <div class="flex flex-col   text-white ">
-                            <div class="flex flex-row hover:text-yellow-300 px-5 py-5 hover:scale-x-110 hover:scale-y-125 transition ease-in-out delay-50">
-                                <i class="material-icons justify-center ">home</i>
-                                <p class="font-bold px-9  opacity-0 group-hover:opacity-100 group-hover:delay-200 " id="home" > HOME</p>
-                            </div>
-                            <div class="flex flex-row hover:text-yellow-300 px-5 py-5 hover:scale-x-110 hover:scale-y-125  transition ease-in-out delay-50">
-                                <i class="material-icons">account_circle</i>
-                                <p class="font-bold px-9  opacity-0 group-hover:opacity-100 group-hover:delay-200 " > ABOUT</p>
-                            </div>
-                            <div class="flex flex-row hover:text-yellow-300 px-5 py-5 hover:scale-x-110 hover:scale-y-125  transition ease-in-out delay-50">
-                                <i class="material-icons">work</i>
-                                <p class="font-bold px-9  opacity-0 group-hover:opacity-100 group-hover:delay-200  " > PROJECTS</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <section id="main">
-        <div class="grid grid-cols-1 md:grid-cols-2">
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
+    </div>
+    <!-- Hamburger Button --> 
+    <div class=" md:hidden ham absolute z-30 text-white md:text-black  left-3/4" id="ham">
+        <div class="hamburger-menu" >
+            <div class="ham-bar bar-top "></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
         </div>
-    </section>
-</div>
+    </div>
+
+    <!-- Main Division -->
+    <div class="absolute z-0 top-16 md:top-0 md:left-16 " >
+        <!-- Contact Me Page -->
+        <div class=" hidden z-10 absolute h-full w-full left-16 top-16" id="Contact_Page">
+            <div class="w-10 h-96 bg-red-500"></div>
+            <!-- <div class=" py-10 px-10 md:px-0">
+                <form class="form bg-white rounded-md w-full md:w-2/4">
+                <div class="pageTitle title">Sign Up </div>
+                <div class="secondaryTitle title">Please fill this form to sign up.</div>
+                <input type="text" class="name formEntry" placeholder="Name" />
+                <input type="text" class="email formEntry" placeholder="Email"/>
+                <textarea class="message formEntry" placeholder="Message"></textarea>
+                <input type="checkbox" class="termsConditions" value="Term">
+                <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+                <button class="submit formEntry" onclick="thanks()">Submit</button>
+                </form>
+            </div> -->
+        </div>
+
+        <div class="absolute z-0 overflow-auto" id="Scroll_Box">
+            <div class="R h-fill  flex flex-col space-y-3 w-full">
+                <!-- Home Division -->
+                <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="home">
+                    <!-- My Image -->
+                    <div class="S  w-full h-96  md:h-screen md:w-1/2 flex flex-row justify-center" >                                            
+                        <img class=" object-scale-down   p-3 " src="./imgs/me.png" alt="Bishal" >
+                    </div>
+                    <!-- Quotation -->
+                    <div class="S h-fill w-screen   flex flex-col justify-center md:h-screen md:w-1/2 text-center p-10" >
+                            <p class="font-myfont text-2xl md:text-3xl lg:text-4xl lineUp">“<br>Currently in 2nd Year, <br> a CS student passionate about Tech and <br> interested in Open Source.<br><br>”</p>
+                    </div>
+                </div>
+                <!-- About Division -->
+                <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="about">
+                    <div class="S  w-full h-96 align-middle md:h-screen md:w-1/2" >
+                    
+                    </div>
+                    <div class="S h-96 w-screen  flex flex-col justify-center md:h-screen md:w-1/2">
+    
+                    </div>
+                </div>
+                <!-- Projects Division -->
+                <div class="G flex flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0  items-center" id="projects">
+                    <div class="S  w-full h-96 align-middle md:h-screen md:w-1/2" >
+
+                    </div>
+                    <div class="S h-96 w-screen  flex flex-col justify-center md:h-screen md:w-1/2">
+    
+                    </div>
+                </div>
+
+    
+    
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    <script src="./js.js"></script>
+</body>
+</html>
