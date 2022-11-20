@@ -17,50 +17,103 @@
 <body class="">
 
     <!-- Navigator -->
-    <div class="absolute z-10">
-        <!-- Mobile Nav -->    
-
-        <!-- Desktop Nav -->
-
-        <nav class=" nav absolute z-20 bg-black h-screen   transition-multiple text-white" id="Desktop_Navbar">            
-            <div class="flex flex-col Navtext_Desktop h-screen justify-between">
-                <!-- Middle Buttons -->
-                <div class="flex flex-col  justify-center h-full">
-                        <a href="#home">
-                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
-                                <i class="material-icons  nav_icons pt-1">home</i>
-                                <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7" >HOME</p>
-                            </div>
-                        </a>
-                        <a href="#about">
-                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
-                                <i class="material-icons  nav_icons pt-1">account_circle</i>
-                                <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7">ABOUT</p>
-                            </div>
-                        </a>
-                        <a href="#projects">
-                            <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
-                                <i class="material-icons  nav_icons pt-1">work</i>
-                                <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7">WORK</p>
-                            </div>
-                        </a>
-                    
+    <nav>
+        <!-- Mobile Nav --> 
+        <div>
+            <!-- Circular Button -->
+            <div class="absolute z-20">
+                <div class="absolute flex z-40 flex-col bg-black rounded-full md:hidden justify-center items-center" " id="nav_button_mobile">
+                    <div class="hamburger-menu " >
+                        <div class="ham-bar bar-top"></div>
+                        <div class="ham-bar bar-mid"></div>
+                        <div class="ham-bar bar-bottom"></div>
+                    </div>
                 </div>
-                <!-- Contact Me -->
-                    <!-- <a href="#contact"> -->
-                        <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  items-center  transition ease-in-out">
-                            <i class="material-icons  pt-1">comment</i>
-                            <div class="flex flex-row">
-                                <p class="font-bold text-base md:text-xl lg:text-xl xl:text-2xl ml-7 ">CONTACT </p>
-                                <p class="font-bold text-base md:text-xl lg:text-xl xl:text-2xl mx-2">ME </p>
-                            </div>
-                        </div>
-                    <!-- </a> -->
             </div>
-        </nav>
-        <div class="absolute bg-white  z-20  border_desktop_nav_button_back"></div>
-        <div class="absolute bg-black h-4  w-4   z-50 border_desktop_nav_button_back_curve1"></div>
-        <div class="absolute bg-black h-4 w-4  z-50  border_desktop_nav_button_back_curve2"></div>
+            <!-- Curve Layer -->
+            <div>
+                <div class="absolute z-20 md:hidden  mobile_bottom_curve">
+                    <img src="./imgs/curve.png" alt="" style="height:2rem ;">
+                </div> 
+                <div class="absolute  z-20 md:hidden  mobile_bottom_curve_left bg-black"></div>
+                <div class="absolute  z-20 md:hidden  mobile_bottom_curve_right bg-black"></div>
+            </div>
+            <!-- Expanded Nav -->
+            <div class="absolute bg-black text-white z-10" id="Mobile_Navbar">
+                <!--  Buttons -->
+                <div class="flex flex-col md:hidden overflow-auto justify-center h-full" id="Mobile_Nav_Buttons">
+                        <div class="flex flex-row justify-evenly">
+                            <a href="#home">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">home</i>
+                                    <p class="font-bold text-xl   mx-7" >HOME</p>
+                                </div>
+                            </a>
+                            <a href="#about">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">account_circle</i>
+                                    <p class="font-bold text-xl  mx-7">ABOUT</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex flex-row justify-evenly">
+                            <a href="#projects">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">work</i>
+                                    <p class="font-bold text-xl  mx-7">WORK</p>
+                                </div>
+                            </a>
+                            <a href="#about">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">account_circle</i>
+                                    <p class="font-bold text-xl  mx-7">ABOUT</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Desktop Nav -->
+        <div class="desktop_navigator">
+            <nav class=" nav absolute z-20 bg-black h-screen   transition-multiple text-white" id="Desktop_Navbar">            
+                <div class="flex flex-col Navtext_Desktop h-screen justify-between">
+                    <!-- Middle Buttons -->
+                    <div class="flex flex-col  justify-center h-full">
+                            <a href="#home">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">home</i>
+                                    <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7" >HOME</p>
+                                </div>
+                            </a>
+                            <a href="#about">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">account_circle</i>
+                                    <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7">ABOUT</p>
+                                </div>
+                            </a>
+                            <a href="#projects">
+                                <div class="flex flex-row hover:text-yellow-300 py-7 px-5  transition ease-in-out items-center" >
+                                    <i class="material-icons  nav_icons pt-1">work</i>
+                                    <p class="font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl mx-7">WORK</p>
+                                </div>
+                            </a>
+                        
+                    </div>
+                    <!-- Contact Me -->
+                        <!-- <a href="#contact"> -->
+                            <div class="contact_button flex flex-row hover:text-yellow-300 py-7 px-5  items-center  transition ease-in-out">
+                                <i class="material-icons  pt-1">comment</i>
+                                <div class="flex flex-row">
+                                    <p class="font-bold text-base md:text-xl lg:text-xl xl:text-2xl ml-7 ">CONTACT </p>
+                                    <p class="font-bold text-base md:text-xl lg:text-xl xl:text-2xl mx-2">ME </p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                </div>
+            </nav>
+            <div class="absolute bg-white  z-20  border_desktop_nav_button_back"></div>
+            <div class="absolute bg-black h-4  w-4   z-50 border_desktop_nav_button_back_curve1"></div>
+            <div class="absolute bg-black h-4 w-4  z-50  border_desktop_nav_button_back_curve2"></div>
             <!-- Circular Button -->
             <div class=" desktop_nav_container absolute w-16  z-40  flex flex-col justify-center h-screen  " id="nav_button_desktop">
                 <div class="bg-black absolute scale-105 left-1 flex flex-row h-16 w-16 z-30 justify-center  items-center rounded-full desktop_nav_border">
@@ -73,19 +126,12 @@
                     </div>
                 </div>
             </div>
-        
         </div>
-    <!-- Hamburger Button --> 
-    <div class=" md:hidden ham absolute z-30 text-white md:text-black  left-3/4" id="ham">
-        <div class="hamburger-menu" >
-            <div class="ham-bar bar-top "></div>
-            <div class="ham-bar bar-mid"></div>
-            <div class="ham-bar bar-bottom"></div>
-        </div>
-    </div>
+    </nav>
+
 
     <!-- Main Division -->
-    <div class="absolute z-0 top-16 md:top-0 md:left-16 " >
+    <div class="absolute z-0  md:left-16 " >
         <!-- Contact Me Page -->
         <div class=" hidden z-10 absolute h-full w-full left-16 top-16" id="Contact_Page">
             <div class="w-10 h-96 bg-red-500"></div>

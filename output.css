@@ -549,12 +549,12 @@ video {
   z-index: 0;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .my-5 {
@@ -634,12 +634,6 @@ video {
   width: 1rem;
 }
 
-.scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .scale-105 {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -668,6 +662,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1018,7 +1016,7 @@ video {
 
 #Scroll_Box{
   width: 100vw;
-  height: calc(100vh - 4rem);
+  height: calc(100vh );
   scroll-behavior: smooth;
 }
 
@@ -1115,6 +1113,62 @@ video {
 .hamburger-menu.active .bar-bottom {
   transform: translate(-50%, -50%) rotate(-225deg);
   top: 50%;
+}
+
+.mobile_navigator{
+  top: calc(100vh - 2rem);
+  height: 2rem;
+}
+
+#nav_button_mobile{
+  height: 3.5rem;
+  width: 3.5rem;
+  top: calc(100vh - 2rem - 40px);
+  left: calc(50vw - 28px);
+}
+
+.border_mobile_nav_button_back{
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  left: calc(50vw - 35px);
+  bottom: 10px;
+  height: 28px;
+  width: 70px;
+}
+
+.mobile_bottom_curve {
+  top: calc(100vh - 2rem );
+  left: calc(50vw - 2.7rem);
+}
+
+.mobile_bottom_curve_left{
+  height: calc(1.8rem + 1px);
+  width: calc(50vw - 43px);
+  top: calc(100vh - 1.8rem - 1px);
+}
+
+.mobile_bottom_curve_right{
+  height: calc(1.8rem + 1px);
+  width: calc(50vw - 42px);
+  top: calc(100vh - 1.8rem - 1px);
+  left: calc(50vw + 42px);
+}
+
+#Mobile_Navbar{
+  top: calc(50vh);
+  visibility: hidden;
+  opacity: 0%;
+  height: 0;
+  transition: opacity .5s ease-in;
+  width: 100vw;
+}
+
+#Mobile_Navbar.active{
+  visibility: visible;
+  opacity: 100%;
+  height: 50vh;
+  transition: opacity .5s ease-out;
+  width: 100vw;
 }
 
 .hover\:w-52:hover {
@@ -1234,4 +1288,3 @@ video {
     line-height: 1;
   }
 }
-
