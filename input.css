@@ -17,7 +17,7 @@
     background-color: darkgrey;
 } */
 html{
-    height: -webkit-fill;
+    height: -webkit-fill-available;
 }
 .desktop_nav_container {
     visibility: hidden;
