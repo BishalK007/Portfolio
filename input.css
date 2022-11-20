@@ -16,7 +16,9 @@
 .S{
     background-color: darkgrey;
 } */
-
+html{
+    height: -webkit-fill;
+}
 .desktop_nav_container {
     visibility: hidden;
     left: 1vw;
