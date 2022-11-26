@@ -19,6 +19,9 @@
 html{
     height: -webkit-fill-available;
 }
+body{
+    height:-webkit-fill-available;;
+}
 .desktop_nav_container {
     visibility: hidden;
     left: 1vw;
